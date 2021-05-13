@@ -27,7 +27,7 @@ public class Transactions {
     @GeneratedValue
     private UUID id = UUID.randomUUID();
 
-    @Range(min=4, max= 99999999)
+    @Range(min=0, max= 99999999)
     private BigDecimal amount;
 
     @Pattern(regexp = "^(EE|LT)\\d{18}|LV\\d{2}[A-Z]{4}\\d{13}$") //Regex-i jaoks kasutatud reeglid on võetud lehelt https://pangaliit.ee/arveldused/iban
